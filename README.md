@@ -1,2 +1,2 @@
 Hi. 
-This is a projecto of The  Odin Project. 
+This is a project of The  Odin Project. 
