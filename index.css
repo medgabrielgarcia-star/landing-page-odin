@@ -1,82 +1,80 @@
-body {
+body{
     margin: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto';
+    --background-color: #1F2937;
+    --hero-main-text: #F9FAF8;
+    --hero-secundary-text: #E5E7EB;
+    --button-color: #3882f6;
 }
 
-header{
-    background-color: #1f2937;
-    padding-bottom: 5%;
+.header{
+    background-color: var(--background-color);
+    padding: 10px
 }
 
 .header-top{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-}
+    justify-content: space-between;
+    margin: 0 15%;
 
-.logo{
-    font-size: 24px;
-    color: #F9FAF8;
-    margin-top: 20px;
+    .logo{
+        color: var(--hero-main-text);
+        font-weight: bold;
+        font-size: 25px;
+    }
 }
 
 .nav-links{
     display: flex;
-    justify-content: space-evenly;
     list-style: none;
-    padding: 10px;
-    gap: 10px;
+    gap: 30px;
 
     a{
         text-decoration: none;
-         color: #e5e7eb
+        color: var(--hero-secundary-text);
     }
 }
 
 .hero{
     display: flex;
-    justify-content: space-around;
-    padding: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 15%;
+    gap: 50px;
     flex: 1;
-    gap: 20px ;
-
-
-    .hero-text-container{
-    max-width: 450px
 }
 
-   span {
-    display: block;
-   }
+.hero-text-container{
+    max-width: 450px;
+}
 
-    .title{
+.title{
+        color: var(--hero-main-text);
         font-size: 48px;
-        color: #f9faf8;
         font-weight: 900;
+        line-height: 1.1;
         margin-bottom: 8px;
     }
 
-    .text{
+.text{
+        color: var(--hero-secundary-text);
         font-size: 18px;
-        color: #E5E7EB
+        margin-bottom: 24px;
     }
+
+.button{
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 32px;
+    color: #fff;
 }
 
 .placeholder{
-    background-color: #8e9196;
-    padding: 10px 15%;
+    color: var(--hero-main-text);
+    background-color: #777;
+    padding: 10% 15%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #fff;
-}
-
-.button{
-    background-color: #3882F6;
-    padding: 10px 10%;
-    border-radius: 15px;
-    color: #fff;
-    border: none;
-    font-weight: bold;
 }
