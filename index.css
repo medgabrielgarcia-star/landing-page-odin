@@ -78,3 +78,45 @@ body{
     display: flex;
     align-items: center;
 }
+
+/* Seciton 2 */
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.card-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+    gap: 35px;
+    margin-top: 15px;
+}
+
+.card{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 150px;
+}
+
+.card-items{
+    border: 4px solid var(--button-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 15px
+}
+
+.card-text{
+    text-align: center;
+    color: #4b5563
+}
+
+
